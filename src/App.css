@@ -1,0 +1,189 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+#image-cards{
+  padding-top: 8px;
+}
+
+body {
+  color: #333;
+  background: #fff;
+  font: 16px/1.6 "Muli", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: "Muli", sans-serif;
+}
+
+p {
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+
+a {
+  color: #f64b4b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f41a1a;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  /* vertical-align: top; */
+}
+
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#header {
+  padding: 8px 8px;
+  font-size: xx-large;
+  font-weight: bold;
+  /*margin-bottom: 20px;*/
+  
+  left: 0;
+  right: 0;
+  top: 0;
+  /*--z-index: 9999; this is to be used if we want to keep the content of header even if we scroll down*/
+  background: #e0dddd;
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#header-home {
+  padding: 8px 8px;
+  font-size: xx-large;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  background: #dad3d3;
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.block {
+  padding: 70px 0;
+}
+
+.about-block {
+  padding: 40px 0;
+}
+
+/* Hero Section (Carousel) */
+.home-page {
+  /* margin: 65px 0 0; */
+}
+
+.carousel-item img {
+  width: 100%;
+  filter: brightness(0.5) blur(2px);
+}
+
+.carousel-caption {
+  left: 25%;
+  right: 25%;
+  transform: translateY(50%);
+  bottom: 50%;
+}
+
+.carousel-caption h2 {
+  font-size: 26px;
+  color: white;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  color: white;
+}
+
+.btn-primary {
+  background: #f64b4b;
+  border-color: #f64b4b;
+  padding: 13px 35px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background 0.3s linear, color 0.3s linear;
+}
+
+.btn-primary:hover {
+  background: #fff;
+  border-color: #f64b4b;
+  color: #f64b4b;
+}
+
+.btn-primary .fas {
+  margin-left: 6px;
+  font-size: 15px;
+}
+
+#home{
+  display: flex;
+  /*margin-top: 16px;*/
+
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .carousel-caption {
+    left: 10%;
+    right: 10%;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  .carousel-caption {
+    display: none; /* Hide captions on small screens */
+  }
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #FF6A13;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgb(255, 90, 0), rgb(255, 165, 80));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(255, 90, 0, 1), rgba(255, 165, 80, 1));
+}
+
+
