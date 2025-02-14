@@ -65,12 +65,12 @@ img {
   right: 0;
   top: 0;
   /*--z-index: 9999; this is to be used if we want to keep the content of header even if we scroll down*/
-  background: #e0dddd;
+  background:linear-gradient(to right, rgba(255, 90, 0, 1), rgba(255, 165, 80, 1));
   box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 #header-home {
-  padding: 8px 8px;
+  
   font-size: xx-large;
   font-weight: bold;
   margin-bottom: 20px;
@@ -79,9 +79,15 @@ img {
   right: 0;
   top: 0;
   z-index: 9999;
-  background: #dad3d3;
+  margin-top: 0px; /* Adjust this value as needed */
+  padding: 20px 0; /* Optional: Add padding for better spacing */
+  text-align: center; /* Center the heading */
+  background: linear-gradient(to right, rgba(255, 90, 0, 1), rgba(255, 165, 80, 1));
   box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  
+  padding: 20px 0; /* Add padding to the heading */
+  text-align: center; /* Center the heading */
+ 
 }
 
 .block {
@@ -120,30 +126,32 @@ img {
 }
 
 .btn-primary {
-  background: #f64b4b;
-  border-color: #f64b4b;
+  background: #FF6A13; 
+  border-color: #FF6A13; 
   padding: 13px 35px;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   transition: background 0.3s linear, color 0.3s linear;
+  color: #000; 
 }
 
 .btn-primary:hover {
-  background: #fff;
-  border-color: #f64b4b;
-  color: #f64b4b;
+  background: #fff; 
+  border-color: #FF6A13; 
+  color: #000; 
 }
 
 .btn-primary .fas {
   margin-left: 6px;
   font-size: 15px;
+  color: #000;
 }
 
 #home{
   display: flex;
   /*margin-top: 16px;*/
-
+  padding-top: 20px;
   flex-direction: column;
   margin-bottom: 50px;
 }
@@ -175,6 +183,7 @@ img {
   }
 }
 
+
 .gradient-custom {
   /* fallback for old browsers */
   background: #FF6A13;
@@ -185,5 +194,4 @@ img {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, rgba(255, 90, 0, 1), rgba(255, 165, 80, 1));
 }
-
 
