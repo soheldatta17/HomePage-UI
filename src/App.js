@@ -17,7 +17,7 @@ const router=createBrowserRouter(
       element:<LL/>
     },
     {
-      path:"/login2",
+      path:"/login-auth",
       element:<Login/>
 
     }
